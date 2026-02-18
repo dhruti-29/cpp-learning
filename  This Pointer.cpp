@@ -1,3 +1,11 @@
+/*
+Use: Current object ne refer karva (this->)
+Why needed: Same name variables confuse thay to current object identify karva.
+Main use: Object potane access kare.
+
+*/
+
+
 #include <iostream>
 using namespace std;
 
