@@ -1,3 +1,11 @@
+/*
+Use: Constructor ma variables direct initialize karva
+Why needed: Faster + const/reference variables mate required
+Main use: Efficient object initialization.
+*/
+
+
+
 #include <iostream>
 using namespace std;
 
@@ -28,5 +36,7 @@ cout<<"area : "<<area<<endl;
 };
 int main() {
     
+    rectangle r1(2,3);
+    r1.display();
     return 0;
 }
