@@ -1,3 +1,11 @@
+/*
+
+Use: Mandatory function implementation in derived class
+Why needed: Common rule define karva
+Main use: Blueprint class (object create nathi thato)
+*/
+
+
 #include <iostream>
 using namespace std;
 
@@ -23,21 +31,29 @@ virtual void dispaly(){
     cin>>name;
 }
 
-}
+};
 
 
 class bike : virtual public vehicle{
 string name;
 
 public :
-virtual void display(){
+virtual void dispaly(){
 cout<<"enter name :"<<endl;
 cin>>name;
 
 }
 
-}
+};
 int main() {
-    
+    car c;
+    bike b;
+
+    c.start();
+    c.dispaly();
+
+    b.start();
+    b.dispaly();
+
     return 0;
 }
