@@ -1,3 +1,10 @@
+/*
+Use: Multiple objects ne pointer thi manage karva
+Why needed: Dynamic memory + large data handle karva easy
+Main use: Many objects efficiently store & access.
+*/
+
+
 #include <iostream>
 using namespace std;
 
