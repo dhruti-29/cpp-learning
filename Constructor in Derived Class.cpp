@@ -1,3 +1,10 @@
+/*
+Use: Derived class create thata base class pan initialize thay
+Why needed: Proper object initialization mate
+Main use: Parent + child data correct set thay.
+*/
+
+
 #include <iostream>
 using namespace std;
 
@@ -14,9 +21,6 @@ age = a;
     }
 
 };
-
-
-
 class employee : public person{
 
     int id ;
