@@ -1,3 +1,10 @@
+/*
+Use: Pointer thi object members access karva
+Why needed: Pointer direct access mate
+Main use: ptr->function() call.
+*/
+
+
 #include <iostream>
 using namespace std;
 
