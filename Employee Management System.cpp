@@ -3,58 +3,70 @@ using namespace std;
 
 class employee{
 
-int id;
 string name;
-double salary;
-
+int id;
 
 public:
+double salary = 10000;
 
 employee(){
 
-    cout<<"enter details "<<endl;
+cout<<"Enter employee details"<<endl;
 
-    cout<<"enter id :"<<endl;
-    cin>>id;
+cout<<"Enter name : "<<endl;
+cin>>name;
 
-    cout<<"enter name : "<<endl;
-    cin>>name;
-
-    cout<<"enter salary :"<<endl;
-    cin>>salary;
+cout<<"Enter id : "<<endl;
+cin>>id;
 
 }
+};
 
-void dispaly(){
+class managers : public employee {
 
-    cout<<"******details******"<<endl;
-    cout<<"id :"<<id<<endl;
-    cout<<"name : "<<name<<endl;
-    cout<<"salary : "<<salary<<endl;
+double b;
 
-}
+public:
 
-void supadate(){
-    cout<<"how many salray upadate :"<<endl;
-    cin>>updates;
- salary =  updates + salary ;
+void bonus(){
 
- cout<<"upadate salary :"<<salary<<endl;
+cout<<"Enter bonus for manager : "<<endl;
+cin>>b;
 
+salary = salary + b;
+
+cout<<"Total salary of manager is : "<<salary<<endl;
 
 }
 
 };
 
+class developers : public employee{
+
+int time;
+
+public:
+
+void payment(){
+
+cout<<"Enter extra working hours : "<<endl;
+cin>>time;
+
+salary = salary + (time * 500);
+
+cout<<"Total salary of developer is : "<<salary<<endl;
+
+}
+
+};
 
 int main(){
 
-    employee e[2];
+managers m;
+m.bonus();
 
-    for(int i=0;i<2;i++){
-        e[i].dispaly();
-        e[i].supadate();
-    }
- 
+developers d;
+d.payment();
 
+return 0;
 }
