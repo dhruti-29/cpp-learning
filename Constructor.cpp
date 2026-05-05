@@ -1,19 +1,17 @@
 #include <iostream>
 using namespace std;
 
+
 class student{
-
 public:
-int x =10;
-
-void display(){
-    cout<<"the value : "<<x<<endl;
-
+student(){
+    cout<<"called";
 }
+
 };
 int main() {
     
     student s1;
-    s1.display();
+
     return 0;
 }

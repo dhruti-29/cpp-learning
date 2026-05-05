@@ -2,18 +2,22 @@
 using namespace std;
 
 class student{
+private:
+int num;
 
 public:
-int x =10;
-
-void display(){
-    cout<<"the value : "<<x<<endl;
-
+student(){
+    cout<<"constructor"<<endl;
 }
+
+~student(){
+    cout<<"destructor called"<<endl;
+}
+
 };
+
 int main() {
-    
     student s1;
-    s1.display();
+
     return 0;
 }
