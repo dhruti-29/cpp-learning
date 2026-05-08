@@ -1,21 +1,23 @@
 #include <iostream>
 using namespace std;
+class s{
+private : 
+int x =10;
 
-class box {
-int l ,w;
-public :
-box(int a,int b){ 
-    l=a;
-    w=b;
+public:
+friend void print(s);
 
-}
-friend void display(box); 
+
 };
-void display(box s){
-    cout<<"value of a :"<<s.l * s.w<<endl;
+
+void print(s obj){
+cout<<"a is "<<obj.x<<endl;
 }
+
+
 int main() {
-    box b1(5,4);
-    display(b1);
+
+s obj;
+print(obj);
     return 0;
 }
