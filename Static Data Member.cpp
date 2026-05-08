@@ -1,24 +1,26 @@
 #include <iostream>
 using namespace std;
 
-class employee{
+class counting{
 
-public:
-inline static int count =0;
-int id ;
+  public :
+    static int count;
+    
+    counting(){
+        count++;
+    }
+static void print(){
 
-void c(){
-    count++;
-    cout<<"number is : "<<count;
+    cout<<count<<endl;
 }
 
-
 };
+int counting::count = 0;
 int main() {
-    employee e1,e2;
+    counting c1,c2;
+   // c1.print();
+    //c2.print();
+    counting::print();
 
-    e1.c();
-    e2.c();
-    
     return 0;
 }
