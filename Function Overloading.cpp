@@ -1,14 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int sum(int a,int b){
+
+int add(int a, int b){
     return a+b;
 }
 
-int sum(int a,int b,int c){
-    return a+b+c;
+float add(flaot a,float b){
+    return a+b;
 }
 int main() {
-    cout<< "the value sum is : "<<sum(2,3)<<endl;
+    cout<<"sum : "<<add(2,4)<<endl;
+    cout<<"sum :"<<add(2.5f,4.5f)<<endl;
+    
     return 0;
 }
