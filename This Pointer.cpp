@@ -8,7 +8,7 @@ Main use: Object potane access kare.
 
 #include <iostream>
 using namespace std;
-
+ 
 class student{
 int id;
 string name;
